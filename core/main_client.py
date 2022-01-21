@@ -123,4 +123,4 @@ class MainClient(discord.Client):
                 if config.use_delay:
                     await asyncio.sleep(random.uniform(0.1, 0.2) * token_count)
                 if output_message:
-                    await message.channel.send(output_message[:2000])
+                    await message.reply(output_message[:2000])
